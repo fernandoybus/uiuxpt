@@ -1,0 +1,152 @@
+/* HEADER */
+
+.my-jumbotron {
+  background-image: url('../images/jumbotron.jpg');
+  /* 100% view port height */
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+.my-jumbo-carousel{
+    min-height: 100vh;
+}
+
+.mt-200{
+  margin-top: 200px;
+}
+
+h1 {
+  font-size: 55px;
+}
+.btn-success{
+  font-size: 40px;
+}
+
+
+.nav-right-side{
+  color: white;
+  font-size: 25px;
+}
+
+
+/*START WITH MOBILE FIRST  */
+@media(min-width: 0px){
+    .bg-kat{
+      background-color: yellow;
+    }
+}
+
+@media(min-width: 576px){
+    .bg-kat{
+      background-color: red;
+    }
+}
+
+@media (min-width: 992px) and (max-width:2000px){
+    .bg-kat{
+      background-color: purple;
+    }
+}
+
+
+
+
+
+.logo-text{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 40px;
+}
+
+/* ROWS */
+
+.full-width {
+  background-image: url('../images/jumbotron.jpg');
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  /* going full width */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+
+.row3 .svg-inline--fa{
+  color: red;
+  font-size: 80px;
+}
+
+.formwrapper{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.row {
+  padding: 50px 0px;
+}
+
+
+
+.my-card{
+   border: 5px solid green;
+   /* EASY FIX */
+   min-height: 600px;
+
+}
+
+.my-button{
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+}
+
+.row8 {
+  background-color: green;
+
+}
+
+.btn-modal{
+  margin: auto;
+  width: 200px;
+  display: block;
+}
+
+/* Booststrap has it already */
+/* .text-justify{
+  text-align: justify;
+} */
+
+
+
+
+/* Footer */
+/* bg dark grey, fonts white, icon light gray 40px */
+.footer{
+  color: white;
+  background-color: #444444;
+}
+
+.footerimage{
+  width: 100%;
+}
+
+.verticalmenu{
+  max-width: 200px;
+  margin: 0 auto;
+  /* text-align:center; it didn't work*/
+}
+
+.socialicons .svg-inline--fa{
+  font-size: 40px;
+  color:#cccccc;
+  margin: 10px 20px;
+}
