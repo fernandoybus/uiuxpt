@@ -104,6 +104,7 @@ h1 {
    border: 5px solid green;
    /* EASY FIX */
    /* min-height: 600px; */
+   height: 100%;
 
 }
 
