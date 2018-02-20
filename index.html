@@ -120,7 +120,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -138,7 +138,7 @@
             </div>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link " href="#">Contact</a>
+            <a class="nav-link " href="#contactform">Contact</a>
           </li>
         </ul>
         <!-- RIGHT SIDE -->
@@ -156,7 +156,7 @@
     <!-- //////////////////////////////// -->
     <main>
       <div class="container">
-              <div class="row row1">
+              <div class="row row1" id="home">
                   <!-- 2 columns -->
                   <div class="col-md-6 text-justify">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -464,7 +464,8 @@
 
 
  <!--BOOTSTRAP JS FILES -->
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script
+  src="http://code.jquery.com/jquery-2.2.4.min.js integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -474,14 +475,24 @@
 <!-- JS snippet for tooltip and Scroll effect -->
  <script type="text/javascript">
 
-     jQuery(document).ready(function() {
-         jQuery('.row').addClass("hidden").viewportChecker({
-             classToAdd: 'visible animated fadeIn',
-             offset: 100
-            });
-     });
 
+      // EASY SCROLL
+      $(document).ready(function(){
+      	$('a[href^="#"]').on('click',function (e) {
+      	    e.preventDefault();
 
+      	    var target = this.hash;
+      	    var $target = $(target);
+
+      	    $('html, body').stop().animate({
+      	        'scrollTop': $target.offset().top
+      	    }, 900, 'swing', function () {
+      	        window.location.hash = target;
+      	    });
+      	});
+      });
+
+      //Tooltip
      $(function () {
           $('[data-toggle="tooltip"]').tooltip()
     });
