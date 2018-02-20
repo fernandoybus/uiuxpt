@@ -17,6 +17,7 @@
   top: 15%;
   left: 10%;
   text-shadow: 2px 1px 7px black;
+  right: initial;
 }
 
 .mt-200{
@@ -102,7 +103,7 @@ h1 {
 .my-card{
    border: 5px solid green;
    /* EASY FIX */
-   min-height: 600px;
+   /* min-height: 600px; */
 
 }
 
