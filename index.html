@@ -34,6 +34,10 @@
     <link rel="stylesheet" href="css/styles.css">
 
 
+    <!-- Show on scrow css -->
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+
+
     <!-- FONT AWESOME -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
@@ -156,7 +160,7 @@
     <!-- //////////////////////////////// -->
     <main>
       <div class="container">
-              <div class="row row1" id="home">
+              <div class="row row1" id="home" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
                   <!-- 2 columns -->
                   <div class="col-md-6 text-justify">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -167,7 +171,7 @@
               </div><!-- end of row1 -->
               <!-- //////////////////////////////// -->
 
-              <div class="row row2">
+              <div class="row row2" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
                 <!-- 3 columns -->
                 <div class="col-md-4 text-center">
                   <img class="footerimage" src="images/jumbotron.jpg" alt="">
@@ -184,7 +188,7 @@
               </div> <!-- end of row2 -->
               <!-- //////////////////////////////// -->
 
-              <div class="row row3">
+              <div class="row row3" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
                 <!-- 6 columns -->
                 <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
                   <i class="far fa-user"></i>
@@ -221,7 +225,7 @@
 
 
               <!-- //////////////////////////////// -->
-              <div class="row row5 contactform" id="contactform">
+              <div class="row row5 contactform" id="contactform" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
                 <div class="col-md-6">
                   <!-- lead paragraph is bigger -->
                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -248,7 +252,7 @@
               </div> <!-- end of row5 -->
 
              <!-- //////////////////////////////// -->
-              <div class="row row6">
+              <div class="row row6" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
                 <!-- 3 columns -->
                 <div class="col-md-3 text-center">
                   <img class="footerimage" src="images/jumbotron.jpg" alt="">
@@ -273,7 +277,7 @@
 
               <!-- //////////////////////////////// -->
               <!-- ROW 7 EQUAL HEIGHTS -->
-               <div class="row row7 row-eq-height">
+               <div class="row row7 row-eq-height" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
                  <!-- 3 columns -->
                  <div class="col-md-4 text-center">
 
@@ -306,7 +310,7 @@
                <!-- //////////////////////////////// -->
                <!-- ROW 8 ALERTS-->
                 <!-- playing with bootstrap utilities classes -->
-                <div class="row row8 border border-primary my-5 mx-1 p-2">
+                <div class="row row8 border border-primary my-5 mx-1 p-2" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
                   <!-- 1 columns -->
                   <div class="col-md-12 text-left">
                     <div class="alert alert-danger" role="alert">
@@ -464,12 +468,14 @@
 
 
  <!--BOOTSTRAP JS FILES -->
- <script
-  src="http://code.jquery.com/jquery-2.2.4.min.js integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+ <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
+ <!-- JS for Show on Scroll  http://anijs.github.io/examples/scrollreveal/-->
+ <script src="js/anijs.js"></script>
+ <script src="js/anijs-helper-scrollreveal.js"></script>
 
 
 <!-- JS snippet for tooltip and Scroll effect -->
