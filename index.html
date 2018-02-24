@@ -161,6 +161,9 @@
     <main>
       <div class="container">
               <div class="row row1" id="home" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+                  <div class="col-md-12">
+                    <h1 class="display-1 text-center">Display 1</h1>
+                  </div>
                   <!-- 2 columns -->
                   <div class="col-md-6 text-justify">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -190,27 +193,28 @@
 
               <div class="row row3" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
                 <!-- 6 columns -->
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
+                <!-- col-xs-12 col-sm-4 col-md-2 col-lg-2 -->
+                <div class="col-md-2 col-sm-6 text-center">
                   <i class="far fa-user"></i>
                   <p>First One Sixth</p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
+                <div class="col-md-2 col-sm-6 text-center">
                   <i class="far fa-user"></i>
                   <p>Second Sixth</p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
+                <div class="col-md-2 col-sm-6 text-center">
                   <i class="far fa-user"></i>
                   <p>Third Sixth</p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
+                <div class="col-md-2 col-sm-6 text-center">
                   <i class="far fa-user"></i>
                   <p>Fourth Sixt</p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
+                <div class="col-md-2 col-sm-6 text-center">
                   <i class="far fa-user"></i>
                   <p>Fifth  Sixth</p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
+                <div class="col-md-2 col-sm-6 text-center">
                   <i class="far fa-user"></i>
                   <p>Six  Sixth</p>
                 </div>
@@ -481,27 +485,21 @@
 <!-- JS snippet for tooltip and Scroll effect -->
  <script type="text/javascript">
 
+ $(function() {
+   $('a[href*="#"]:not([href="#"])').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         $('html, body').animate({
+           scrollTop: target.offset().top
+         }, 1000);
+         return false;
+       }
+     }
+   });
+ });
 
-      // EASY SCROLL
-      $(document).ready(function(){
-      	$('a[href^="#"]').on('click',function (e) {
-      	    e.preventDefault();
-
-      	    var target = this.hash;
-      	    var $target = $(target);
-
-      	    $('html, body').stop().animate({
-      	        'scrollTop': $target.offset().top
-      	    }, 900, 'swing', function () {
-      	        window.location.hash = target;
-      	    });
-      	});
-      });
-
-      //Tooltip
-     $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-    });
  </script>
 
   </body>

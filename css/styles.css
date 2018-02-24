@@ -1,3 +1,100 @@
+/* GENERAL CSS FOR ALL SIZES */
+/* TEXT MEDIA QUERIES */
+/* https://codepen.io/atcraigwatson/pen/vGPKBq */
+html,
+body {
+	font-size: 14px !important;
+}
+h1 {
+	font-size: 1.602em;
+}
+h2 {
+	font-size: 1.424em;
+}
+h3 {
+	font-size: 1.266em;
+}
+h4 {
+	font-size: 1.125em;
+}
+h5 {
+	font-size: 0.889em;
+}
+h6 {
+	font-size: 0.79em;
+}
+.display-1 {
+	font-size: 3.906em;
+}
+.display-2 {
+	font-size: 3.125em;
+}
+.display-3 {
+	font-size: 2.5em;
+}
+.display-4 {
+	font-size: 2em;
+}
+
+
+@media (min-width: 48em) {
+	h1 {
+	  font-size: 2.441em;
+	}
+	h2 {
+		font-size: 1.953em;
+	}
+	h3 {
+		font-size: 1.563em;
+	}
+	h4 {
+		font-size: 1.25em;
+	}
+	.display-1 {
+		font-size: 6em;
+	}
+	.display-2 {
+		font-size: 5.5em;
+	}
+	.display-3 {
+		font-size: 4.5em;
+	}
+	.display-4 {
+		font-size: 3.5em;
+	}
+}
+
+
+@media (min-width: 62em) {
+	html,
+	body {
+		font-size: 16px !important;
+	}
+}
+
+
+@media (min-width: 75em) {
+	html,
+	body {
+		font-size: 18px !important;
+	}
+}
+
+.jumbotron {
+	font-size: 16px;
+	@media (min-width: 62em) {
+		font-size: 20px;
+	}
+	h1 {
+		border-bottom: 4px solid #0275d8;
+	}
+	p.lead {
+		border-radius: 4px;
+	}
+}
+
+
+
 /* HEADER */
 
 .my-jumbotron {
@@ -37,29 +134,9 @@ h1 {
   font-size: 25px;
 }
 
-
-/*START WITH MOBILE FIRST  */
-@media(min-width: 0px){
-    .bg-kat{
-      background-color: yellow;
-    }
+.bg-kat{
+  background-color: red;
 }
-
-@media(min-width: 576px){
-    .bg-kat{
-      background-color: red;
-    }
-}
-
-@media (min-width: 992px) and (max-width:2000px){
-    .bg-kat{
-      background-color: purple;
-    }
-}
-
-
-
-
 
 .logo-text{
     margin-top: 20px;
@@ -158,3 +235,58 @@ h1 {
   color:#cccccc;
   margin: 10px 20px;
 }
+
+}
+
+/* BOOSTRAP RESPOSIVE MEDIA QUERIES */
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+
+
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+
+ }
+
+
+
+
+/* ------------------------------------------------- */
+/* TESTS */
+/*START WITH MOBILE FIRST  */
+/* @media(min-width: 0px){
+    .bg-kat{
+      background-color: yellow;
+    }
+}
+
+@media(min-width: 576px){
+    .bg-kat{
+      background-color: red;
+    }
+}
+
+@media (min-width: 992px) and (max-width:2000px){
+    .bg-kat{
+      background-color: purple;
+    }
+} */
